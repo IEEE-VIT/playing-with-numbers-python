@@ -13,7 +13,7 @@ def factorial():
   a=int(input())
   f=1
   if(a>1):
-    for i in range(1,n):
+    for i in range(1,a):
       f=f*i
   return f
 def prime():
