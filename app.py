@@ -10,12 +10,11 @@ def multiply():
   # Return the multiplication of all the numbers upto 2 decimal places
 
 def factorial():
-  n = input("Please enter your number: ")
-  if (n==1 or n==0):
+    if (n==1 or n==0):
     ans = 1
   else:
     ans = n * factorial(n-1)
-  return ("The factorial of ", n, " is: ", ans, "!") 
+  return ans
 
 def prime():
   # Take an integer n
@@ -24,3 +23,4 @@ def prime():
 
 if __name__=='__main__':
   add()
+  factorial(n = int(input("Please enter your number: ")))
