@@ -11,9 +11,12 @@ def multiply():
   print("Your final result is: ", z)
 
 def factorial():
-  # Take an integer as an input and
-  # Return it's factorial 
-
+  a=int(input())
+  f=1
+  if(a>1):
+    for i in range(1,a):
+      f=f*i
+  return f
 def prime():
   # Take an integer n
   # Check whether it is a Prime or not
