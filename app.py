@@ -10,9 +10,12 @@ def multiply():
   # Return the multiplication of all the numbers upto 2 decimal places
 
 def factorial():
-  # Take an integer as an input and
-  # Return it's factorial 
-
+  a=int(input())
+  f=1
+  if(a>1):
+    for i in range(1,n):
+      f=f*i
+  return f
 def prime():
   # Take an integer n
   # Check whether it is a Prime or not
