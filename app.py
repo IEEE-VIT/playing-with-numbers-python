@@ -15,9 +15,22 @@ def factorial():
   # Return it's factorial 
 
 def prime():
-  # Take an integer n
-  # Check whether it is a Prime or not
-  # Return true or false
+ num = int(input("Enter a number: "))
+  if num>1:
+    for i in range(2,num-1):
+        if (num % i) == 0:
+            flag=0
+            break
+        else:
+            flag=1
+    if flag==0:
+        print("False")
+    else:
+        print("True")
+  else:
+    print("False")
+        
+
 
 if __name__=='__main__':
   add()
