@@ -11,8 +11,15 @@ def multiply():
   print("Your final result is: ", z)
 
 def factorial():
-  # Take an integer as an input and
-  # Return it's factorial 
+  x = input("enter your number:")
+  if x < 0:
+   print("Factorial does not exist for negative numbers")
+elif x == 0:
+   print("The factorial of 0 is 1.")
+else:
+   for i in range(1,x + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
 
 def prime():
   # Take an integer n
