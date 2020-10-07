@@ -1,26 +1,32 @@
 def add():
-  x = input("Enter your number 1")
-  y = input("Enter your number 2")
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
   z = x+y
   print("Your final result is: ", z)
 
 def multiply():
-  x = input("Enter your number 1")
-  y = input("Enter your number 2")
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
   z = x*y
   print("Your final result is: ", z)
 
 def factorial():
-  a=int(input())
+  num=int(input("Enter your number: "))
   f=1
-  if(a>1):
-    for i in range(1,a):
+  if(num<0):
+    print("Invalid number, Try positive integers")
+  elif(num==0):
+    pass
+  else:
+    for i in range(1,num+1):
       f=f*i
-  return f
+  print("Factorial of the number is: ",f)
+
 def prime():
- num = int(input("Enter a number: "))
+  num = int(input("Enter a number: "))
   if num>1:
-    for i in range(2,num-1):
+    flag=0
+    for i in range(2,num):
         if (num % i) == 0:
             flag=0
             break
@@ -31,10 +37,12 @@ def prime():
     else:
         print("True")
   else:
-    print("False")
+    print("False") 
         
 
 
 if __name__=='__main__':
   add()
   multiply()
+  factorial()
+  prime()
