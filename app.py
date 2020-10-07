@@ -21,3 +21,4 @@ def prime():
 
 if __name__=='__main__':
   add()
+  multiply()
