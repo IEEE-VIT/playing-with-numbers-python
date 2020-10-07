@@ -15,10 +15,17 @@ def factorial():
   # Return it's factorial 
 
 def prime():
-  # Take an integer n
-  # Check whether it is a Prime or not
-  # Return true or false
-
+  x = input("Enter a number:")
+  fac = 1
+  if x<0:
+    print("factorial not possible")
+  elif x==0:
+    print("factorial is 1)
+  else:
+    for i in range(1,num + 1):
+          fac = fac * i
+    print("factorial is:",fac)
 if __name__=='__main__':
   add()
   multiply()
+  factorial()
