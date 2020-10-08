@@ -1,14 +1,16 @@
 def add():
-  x = input("Enter your number 1")
-  y = input("Enter your number 2")
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
   z = x+y
   print("Your final result is: ", z)
 
 def multiply():
-  x = input("Enter your number 1")
-  y = input("Enter your number 2")
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
   z = x*y
   print("Your final result is: ", z)
+  
+  
 
 def factorial():
   a=int(input())
@@ -17,8 +19,10 @@ def factorial():
     for i in range(1,a):
       f=f*i
   return f
+
+
 def prime():
- num = int(input("Enter a number: "))
+  num = int(input("Enter a number: "))
   if num>1:
     for i in range(2,num-1):
         if (num % i) == 0:
@@ -33,8 +37,15 @@ def prime():
   else:
     print("False")
         
+        
+# a function to replace space with _
+def fullname():
+  name = input("Enter your fullname: ")
+  name = name.replace(" ","_")
+  print(name)
 
 
 if __name__=='__main__':
   add()
   multiply()
+  fullname()
