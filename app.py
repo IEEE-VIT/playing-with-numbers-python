@@ -33,8 +33,20 @@ def prime():
   else:
     print("False")
         
-
+def palindrome():
+  n = int(input("Enter a number: "))
+  s=0
+  t=n
+  while t>0:
+    r=t%10
+    s=s*10+r
+    t=t//10
+  if n==s:
+    print("Palindrome")
+  else:
+    print("Not Palindrome")
 
 if __name__=='__main__':
   add()
   multiply()
+  palindrome()
