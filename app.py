@@ -80,5 +80,6 @@ if __name__=='__main__':
   prime()
   print_factors()
   palindrome()
+  armstrong()
   
 
