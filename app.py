@@ -11,12 +11,17 @@ def multiply():
   print("Your final result is: ", z)
 
 def factorial():
-  a=int(input())
-  f=1
-  if(a>1):
-    for i in range(1,a):
-      f=f*i
-  return f
+  x = int(input("enter your number:"))
+  if x < 0:
+   print("Factorial does not exist for negative numbers")
+elif x == 0:
+   print("The factorial of 0 is 1.")
+else:
+  factorial=1
+   for i in range(1,x + 1):
+       factorial = factorial*i
+   print("The factorial of",x,"is",factorial)
+
 def prime():
  num = int(input("Enter a number: "))
   if num>1:
@@ -50,3 +55,4 @@ if __name__=='__main__':
   add()
   multiply()
   palindrome()
+  factorial()
