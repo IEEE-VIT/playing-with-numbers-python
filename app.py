@@ -1,12 +1,12 @@
 def add():
-  x = input("Enter your number 1")
-  y = input("Enter your number 2")
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
   z = x+y
   print("Your final result is: ", z)
 
 def multiply():
-  x = input("Enter your number 1")
-  y = input("Enter your number 2")
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
   z = x*y
   print("Your final result is: ", z)
 
@@ -22,10 +22,12 @@ else:
        factorial = factorial*i
    print("The factorial of",x,"is",factorial)
 
+
 def prime():
- num = int(input("Enter a number: "))
+  num = int(input("Enter a number: "))
   if num>1:
-    for i in range(2,num-1):
+    flag=0
+    for i in range(2,num):
         if (num % i) == 0:
             flag=0
             break
@@ -36,7 +38,7 @@ def prime():
     else:
         print("True")
   else:
-    print("False")
+    print("False") 
         
 def palindrome():
   n = int(input("Enter a number: "))
@@ -54,5 +56,7 @@ def palindrome():
 if __name__=='__main__':
   add()
   multiply()
-  palindrome()
   factorial()
+  prime()
+  palindrome()
+
