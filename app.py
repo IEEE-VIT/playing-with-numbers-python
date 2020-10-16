@@ -38,7 +38,13 @@ def prime():
     else:
         print("True")
   else:
-    print("False") 
+
+def print_factors():
+   num = int(input("Enter a number: "))  
+   print("The factors of",x,"are:")
+   for i in range(1, x + 1):
+       if x % i == 0:
+           print(i)
         
 def palindrome():
   n = int(input("Enter a number: "))
@@ -72,5 +78,7 @@ if __name__=='__main__':
   multiply()
   factorial()
   prime()
+  print_factors()
   palindrome()
+  
 
