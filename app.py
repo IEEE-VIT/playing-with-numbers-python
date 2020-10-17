@@ -72,6 +72,15 @@ def palindrome():
     print(n,"is an Armstrong number")
   else:
     print(n,"is not an Armstrong number")
+    
+ def reverse(): 
+  n = int(input("Enter a number"))  
+  rev = 0
+  while(n > 0): 
+    a = n % 10
+    rev = rev * 10 + a 
+    n = n // 10
+  print(rev) 
 
 if __name__=='__main__':
   add()
@@ -80,5 +89,6 @@ if __name__=='__main__':
   prime()
   print_factors()
   palindrome()
+  rev()
   
 
