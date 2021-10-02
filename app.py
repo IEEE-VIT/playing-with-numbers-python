@@ -13,7 +13,7 @@ def multiply():
 def factorial():
   x = int(input("enter your number:"))
   if x < 0:
-   print("Factorial does not exist for negative numbers")
+   print("Factorial doesn't exist for negative numbers")
 elif x == 0:
    print("The factorial of 0 is 1.")
 else:
