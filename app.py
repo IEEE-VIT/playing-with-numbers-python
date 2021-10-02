@@ -72,6 +72,17 @@ def palindrome():
     print(n,"is an Armstrong number")
   else:
     print(n,"is not an Armstrong number")
+    
+  def palin_pyramidpattern(): 
+    
+    n = int(input("Enter the number of rows :"))
+    for i in range(1, n+1):
+     for k in range(1, i+1):
+       print(k, end = " ")
+    for l in range(i-1, 0, -1):
+      print(l , end = ” “)
+    
+    print(“\n”)
 
 if __name__=='__main__':
   add()
@@ -80,5 +91,6 @@ if __name__=='__main__':
   prime()
   print_factors()
   palindrome()
+  palin_pyramidpattern()
   
 
