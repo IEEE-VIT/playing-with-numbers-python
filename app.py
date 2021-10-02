@@ -14,14 +14,21 @@ def factorial():
   x = int(input("enter your number:"))
   if x < 0:
    print("Factorial does not exist for negative numbers")
-elif x == 0:
+  elif x == 0:
    print("The factorial of 0 is 1.")
-else:
-  factorial=1
-   for i in range(1,x + 1):
+  else:
+    factorial=1
+    for i in range(1,x + 1):
        factorial = factorial*i
-   print("The factorial of",x,"is",factorial)
+    print("The factorial of",x,"is",factorial)
 
+def fibonacci(n):
+  if n == 0:
+    return 0
+  elif n == 1:
+    return 1
+  else:
+    return fibonacci(n-1)+fibonacci(n-2)
 
 def prime():
   num = int(input("Enter a number: "))
@@ -38,9 +45,10 @@ def prime():
     else:
         print("True")
   else:
+    print("Error")
 
 def print_factors():
-   num = int(input("Enter a number: "))  
+   x = int(input("Enter a number: "))  
    print("The factors of",x,"are:")
    for i in range(1, x + 1):
        if x % i == 0:
@@ -59,7 +67,7 @@ def palindrome():
   else:
     print("Not Palindrome")
 
- def armstrong():
+def armstrong():
   n = int(input("Enter a number"))  
   order = len(str(n))
   sum = 0
