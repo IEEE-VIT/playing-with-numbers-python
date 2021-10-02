@@ -22,7 +22,8 @@ def factorial():
        factorial = factorial*i
     print("The factorial of",x,"is",factorial)
 
-def fibonacci(n):
+def fibonacci():
+  n = int(input("Enter the number: "))
   if n == 0:
     return 0
   elif n == 1:
@@ -88,5 +89,5 @@ if __name__=='__main__':
   prime()
   print_factors()
   palindrome()
-  
+  fibonacci()
 
