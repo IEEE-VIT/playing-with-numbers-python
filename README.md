@@ -1,6 +1,6 @@
 <p align="center"><img width="40%" src="https://res.cloudinary.com/practicaldev/image/fetch/s--Lojm4XAD--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/9g2loqfoe84qeh8qqpa4.png"/></p>
 
-# Hacktoberfest 2020 with IEEE-VIT :heart:
+# Hacktoberfest 2021 with IEEE-VIT :heart:
 Create different python functions which perform mathematical operations.
 
 Support open source software by participating in [Hacktoberfest](https://hacktoberfest.digitalocean.com) and get goodies and a free t-shirt! :yellow_heart:
