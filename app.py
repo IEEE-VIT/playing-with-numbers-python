@@ -9,6 +9,13 @@ def multiply():
   y = int(input("Enter your number 2: "))
   z = x*y
   print("Your final result is: ", z)
+  
+def OddEven():
+  num = int(input("Enter a number here: "))
+  if (num % 2) == 0:
+   print("{0} is Even".format(num))
+  else:
+   print("{0} is Odd".format(num))
 
 def factorial():
   x = int(input("enter your number:"))
@@ -90,4 +97,5 @@ if __name__=='__main__':
   print_factors()
   palindrome()
   fibonacci()
+  OddEven()
 
