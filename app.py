@@ -59,7 +59,30 @@ def palindrome():
   else:
     print("Not Palindrome")
 
- def armstrong():
+def fibonacci(n):
+    a = 0
+    b = 1
+     
+    if n < 0:
+        print("Incorrect input")
+         
+    
+    elif n == 0:
+        return 0
+       
+    
+    elif n == 1:
+        return b
+    else:
+        for i in range(1, n):
+            c = a + b
+            a = b
+            b = c
+        return b
+ 
+print(fibonacci(int(input("Enter the input))
+
+def armstrong():
   n = int(input("Enter a number"))  
   order = len(str(n))
   sum = 0
