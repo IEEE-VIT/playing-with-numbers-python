@@ -1,14 +1,12 @@
 def add():
   x = int(input("Enter your number 1: "))
   y = int(input("Enter your number 2: "))
-  z = x+y
-  print("Your final result is: ", z)
+  print("Your final result is: ", x+y)
 
 def multiply():
   x = int(input("Enter your number 1: "))
   y = int(input("Enter your number 2: "))
-  z = x*y
-  print("Your final result is: ", z)
+  print("Your final result is: ", x*y)
 
 def factorial():
   x = int(input("enter your number:"))
@@ -17,10 +15,10 @@ def factorial():
   elif x == 0:
    print("The factorial of 0 is 1.")
   else:
-    factorial=1
+    fact=1
     for i in range(1,x + 1):
-       factorial = factorial*i
-    print("The factorial of",x,"is",factorial)
+       fact *= i
+    print("The factorial of",x,"is",fact)
 
 def fibonacci():
   n = int(input("Enter the number: "))
@@ -69,7 +67,7 @@ def palindrome():
     print("Not Palindrome")
 
 def armstrong():
-  n = int(input("Enter a number"))  
+  n = int(input("Enter a number: "))  
   order = len(str(n))
   sum = 0
   temp = n
