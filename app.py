@@ -10,6 +10,26 @@ def multiply():
   z = x*y
   print("Your final result is: ", z)
 
+def sub():
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
+  print("Your final result is: ", x-y)
+
+def div():
+  x = int(input("Enter your number 1: "))
+  y = int(input("Enter your number 2: "))
+  if y:
+    print("Your final result is: ", x/y)
+  else:
+    print("Division by zero is not possible!!")
+
+def absolute():
+  x = int(input("Enter your number : "))
+  if x>= 0:
+    print("The absolute value of {} = {}".format(x,x))
+  else:
+    print("The absolute value of {} = {}".format(x,-x))
+    
 def factorial():
   x = int(input("enter your number:"))
   if x < 0:
@@ -85,6 +105,9 @@ def armstrong():
 if __name__=='__main__':
   add()
   multiply()
+  sub()
+  div()
+  absolute()
   factorial()
   prime()
   print_factors()
